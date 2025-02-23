@@ -52,7 +52,5 @@ class YahooRealtimeSearch:
 
 if __name__ == '__main__':
     y = YahooRealtimeSearch()
-    timeline = y.search('@deepseek_ai')
-    print(timeline.__next__())
-    time.sleep(3)
-    print(timeline.__next__())
+    timeline = y.search('@korekore19')
+    print(next(timeline))
