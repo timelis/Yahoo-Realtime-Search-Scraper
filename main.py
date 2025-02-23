@@ -32,7 +32,7 @@ class YahooRealtimeSearch:
     def __init__(self):
         self.crumb = None
 
-    def get_timeline(self, keyword: str, type: Optional[Literal["media"]] = None):
+    def search(self, keyword: str, type: Optional[Literal["media"]] = None):
         url = 'https://search.yahoo.co.jp/realtime/search?p='
         if "@" in keyword:
             keyword = f'ID:{keyword.replace("@", "")}'
@@ -52,7 +52,7 @@ class YahooRealtimeSearch:
 
 if __name__ == '__main__':
     y = YahooRealtimeSearch()
-    timeline = y.get_timeline('@deepseek_ai')
+    timeline = y.search('@deepseek_ai')
     print(timeline.__next__())
     time.sleep(3)
     print(timeline.__next__())
