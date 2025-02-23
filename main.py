@@ -52,5 +52,5 @@ class YahooRealtimeSearch:
 
 if __name__ == '__main__':
     y = YahooRealtimeSearch()
-    timeline = y.search('@korekore19')
+    timeline = y.search('@elonmusk')
     print(next(timeline))
