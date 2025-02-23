@@ -20,7 +20,7 @@ pip install -r requirements.txt
 yahoo_realtime_search = YahooRealtimeSearch()
 
 # ユーザーの最新の投稿から40件取得
-timeline = yahoo_realtime_searchy.search('@elonmusk')
+timeline = yahoo_realtime_search.search('@elonmusk')
 
 # さらに40件
 print(next(timeline))
